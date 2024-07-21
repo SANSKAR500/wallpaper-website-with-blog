@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Responsive Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/wallpaper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg py-2 bg-body-tertiary border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="goku" src="icons8-son-goku-48.png" alt="Goku"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link link-body-emphasis px-2 active" aria-current="page" href="/wallpaer.html">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link link-body-emphasis px-2" href="/pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-body-emphasis px-2" href="/blog.html">blogs</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <div class="dropdown">
+            <button class="btn btn-primary-subtle text-primary-emphasis border border-primary-subtle rounded-pill dropdown-toggle d-flex align-items-center p-1 pe-2" type="button" id="dropdownMenuButton">
+                <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">
+                Sanskar
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="/profile.html">Profile</a></li>
+                <li><a class="dropdown-item" href="#" id="logoutButton">Logout</a></li>
+            </ul>
+        </div>
+        
+        <!-- Logout Modal -->
+        <div id="logoutModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="closeModal">&times;</span>
+                <h5>Confirm Logout</h5>
+                <p>Are you sure you want to logout?</p>
+                <div class="modal-footer">
+                    <button id="cancelButton" class="btn">Cancel</button>
+                    <a href="logout.html" id="okButton" class="btn">OK</a>
+                </div>
+            </div>
+        </div>
+        
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+   <strong>namaste!</strong> You should check in on some of those wallpers below.
+   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+ </div>
+
+
+ <div class="container-sm mt-4">
+   <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     </div>
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <img src="makima___chainsaw_man_by_aaartemus_dfb73pd.jpg" class="d-block w-100" alt="Makima - Chainsaw Man">
+         <div class="carousel-caption d-none d-md-block">
+           <h5>Makima - Chainsaw Man</h5>
+           <button type="button" class="download">DOWNLOAD</button>
+         </div>
+       </div>
+       <div class="carousel-item">
+         <img src="21f060a9f0b2eaa27a1c7c10f7ea7cf1.jpg" class="d-block w-100" alt="Zoro - One Piece">
+         <div class="carousel-caption d-none d-md-block">
+           <h5>Zoro - One Piece</h5>
+           <button type="button" class="download">DOWNLOAD</button>
+         </div>
+       </div>
+       <div class="carousel-item">
+         <img src="18e78cf32fde6916b9a6aa69cb2193f8.jpg" class="d-block w-100" alt="Bleach">
+         <div class="carousel-caption d-none d-md-block">
+           <h5>Bleach</h5>
+           <button type="button" class="download">DOWNLOAD</button>
+         </div>
+       </div>
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div>
+ </div>
+
+  <div class="album py-5 bg-body-tertiary">
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/18e78cf32fde6916b9a6aa69cb2193f8.jpg" class="bd-placeholder-img card-img-top" alt="Image description">
+                    <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary view">
+                  <i class="bi bi-eye"></i> View
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary download">
+                  <i class="bi bi-download"></i> Download
+                </button>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/21f060a9f0b2eaa27a1c7c10f7ea7cf1.jpg" class="bd-placeholder-img card-img-top" alt="Image description">          <div class="card-body">
+        
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary view">
+                  <i class="bi bi-eye"></i> View
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary download">
+                  <i class="bi bi-download"></i> Download
+                </button>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/anime-wallpaper-hd-02.jpg" class="bd-placeholder-img card-img-top" alt="Image description">          <div class="card-body">
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary view">
+                  <i class="bi bi-eye"></i> View
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary download">
+                  <i class="bi bi-download"></i> Download
+                </button>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/denji-chainsaw-man-4k-wallpaper-3840x2160-uhdpaper.com-475.1_b.jpg" class="bd-placeholder-img card-img-top" alt="Image description">          <div class="card-body">
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary view">
+                  <i class="bi bi-eye"></i> View
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary download">
+                  <i class="bi bi-download"></i> Download
+                </button>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/makima___chainsaw_man_by_aaartemus_dfb73pd.jpg" class="bd-placeholder-img card-img-top" alt="Image description">          <div class="card-body">
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary view">
+                  <i class="bi bi-eye"></i> View
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary download">
+                  <i class="bi bi-download"></i> Download
+                </button>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/sung-jinwoo-solo-leveling-4k-wallpaper-uhdpaper.com-527@0@e.jpg" class="bd-placeholder-img card-img-top" alt="Image description">          <div class="card-body">
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary view">
+                  <i class="bi bi-eye"></i> View
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary download">
+                  <i class="bi bi-download"></i> Download
+                </button>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/thumb-1920-764519.jpg" class="bd-placeholder-img card-img-top" alt="Image description">          <div class="card-body">
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary view">
+                  <i class="bi bi-eye"></i> View
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary download">
+                  <i class="bi bi-download"></i> Download
+                </button>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/Uchiha Madara vs Shinobi Alliance.png" class="bd-placeholder-img card-img-top" alt="Image description">          <div class="card-body">
+           
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary view">
+                  <i class="bi bi-eye"></i> View
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary download">
+                  <i class="bi bi-download"></i> Download
+                </button>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/wallpaperflare.com_wallpaper.jpg" class="bd-placeholder-img card-img-top" alt="Image description">          <div class="card-body">
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary view">
+                  <i class="bi bi-eye"></i> View
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary download">
+                  <i class="bi bi-download"></i> Download
+                </button>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="wallpaper.js"></script>
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+  
+
+  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top" id="fotter">
+    <h3 class="anime">ANIMEHUB</h3>
+    <p class="support">Support us by donating 1$</p>
+    <ul class="list-unstyled d-flex">
+      <li class="ms-3"><a class="link-body-emphasis" href="#" ><i class="fa-brands fa-twitter" id="gg"></i></a></li>
+      <li class="ms-3"><a class="link-body-emphasis" href="#" ><i class="fa-brands fa-facebook" id="gg"></i></a></li>
+      <li class="ms-3"><a class="link-body-emphasis" href="#" "><i class="fa-brands fa-instagram" id="gg"></i></a></li>
+    </ul>
+  </div>
+  
+  
+</body>
+</html>

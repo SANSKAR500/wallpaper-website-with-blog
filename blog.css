@@ -1,0 +1,263 @@
+body{
+    background-color: rgb(238, 238, 238)
+}
+#gg{
+    border-left: 1px solid #000000; 
+    border-right:1px solid #000000; 
+   
+    }
+
+    #gc{
+        display: flex;
+        justify-content: end;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #e9ecef;
+    }
+    
+    #gp {
+        display: flex;
+        align-items: center;
+    }
+    
+    #gp i {
+        font-size: 24px;
+        color: #333;
+        margin-right: 15px;
+    }
+    
+    #gp i:last-child {
+        margin-right: 0;
+    }
+   #dd{
+    background-color: #000000;
+   }
+
+    #dope{
+        font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+  background-color: #000000;
+  color: white;
+    }
+
+    #dot{
+        font-family: "Playwrite ES", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    }
+
+    #dip{
+        font-family: "Playwrite ES", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    }
+
+    #now{
+        font-family: "Playwrite ES", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  background-color: gray;
+    }
+
+    .display{
+        display: flex;
+       
+    }
+
+    .zero{
+        font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    }
+
+    .card-text{
+        font-family: "Playwrite US Trad", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    }
+    .card {
+        width: 40rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 20px auto;
+      }
+      .card video {
+        width: 100%;
+        height: auto;
+      }
+      .card-body {
+        padding: 1rem;
+      }
+
+      
+        
+
+      .red{
+        font-family: "Playfair Display", serif;
+        font-size: 3rem;
+        font-weight: 800;
+        font-style: normal; 
+        color: yellow;
+      }
+      .reds{
+        font-family: "Playwrite FR Trad", cursive;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal; 
+        color: yellow;
+      }
+
+      .redy{
+        font-family: "Playwrite NZ", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color:yellow;
+      }
+
+      .yellow{
+        font-family: "Playfair Display", serif;
+        font-size: 3rem;
+        font-weight: 800;
+        font-style: normal; 
+        color: yellow;
+      }
+
+      .yellows{
+        font-family: "Playwrite FR Trad", cursive;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal; 
+        color: yellow;
+      }
+
+      .yellowe{
+        font-family: "Playwrite NZ", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: yellow;
+      }
+     
+
+      .vh-100 {
+        height: 100vh; /* Full viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 70cm;
+        
+      }
+      /* Make carousel items fill more space */
+      .carousel-item img {
+        max-height: 680px; /* Adjust as necessary for image height */
+        object-fit: cover; /* Ensure images fill the carousel item */
+      }
+      
+
+      .carousel-caption {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 40%; /* Adjust width as needed */
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+        color: white;
+        padding: 20px; /* Padding inside the caption */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: black;
+        opacity: 90%;
+      }
+    
+      
+    
+      .carousel-caption a:hover {
+        text-decoration: underline;
+      }
+
+
+      .hunter{
+        display: flex;
+        width: 90rem;
+      }
+
+      #about{
+        height: fit-content;
+      }
+
+      #divider{
+        height:0.5cm;
+      }
+              
+      .position-relative {
+        position: relative; /* Ensures relative positioning for nested elements */
+    }
+    
+    .cards {
+        position: absolute; 
+        top: 0; /* Positioned at the top of its container */
+        left: 0; /* Positioned at the left of its container */
+        transform: rotate(3deg); /* Rotate slightly to the right */
+        background-color: #f0f0f0; /* Light gray background color */
+        padding: 10px; /* Add padding around the image */
+        border-radius: 5px; /* Optional: Adds rounded corners */
+    }
+    
+    .cardio {
+        position: absolute; 
+        bottom: 0; /* Positioned at the bottom of its container */
+        right: 0; /* Positioned at the right of its container */
+        transform: rotate(-3deg); /* Rotate slightly to the left */
+        background-color: #f0f0f0; /* Light gray background color */
+        padding: 10px; /* Add padding around the image */
+        border-radius: 5px; /* Optional: Adds rounded corners */
+    }
+    
+    .card-img-top {
+        display: block; 
+        max-width: 100%; 
+        height: auto;
+    }
+    
+    /* Optional styling for the surrounding product devices */
+    .product-device {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #ccc; /* Gray background color */
+        width: 50px; /* Adjust width as needed */
+        height: 50px; /* Adjust height as needed */
+    }
+    
+    .display-3.fw-bold {
+      font-family: 'Dancing Script', cursive; /* Using a custom cursive font from Google Fonts */
+      font-weight: normal; /* Ensure the font weight is normal */
+      font-size: 2.5rem; /* Adjust the font size to make it shorter */
+      color: #f0f0f0;
+      
+  }
+  #last{
+    background-color: #333;
+  }
+  
+
+    
+                
